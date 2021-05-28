@@ -1,0 +1,278 @@
+@import "../../assets/scss/variables.scss";
+
+.container-fluid {
+  > .row {
+    > div {
+      > .topSection {
+        min-height: $oneVw * 590;
+        padding-top: $oneVh * 25;
+        background: {
+          color: $topSectionColor;
+        }
+        > .topContentSection {
+          padding: {
+            top: $oneVh * 30;
+          }
+          > .leftBlock {
+            > div {
+              padding: {
+                left: $oneVw * 47;
+              }
+            }
+            > .toptxt {
+              > span {
+                width: 100%;
+                display: block;
+                font: {
+                  family: $primary-font-bold;
+                  size: $oneVw * 105;
+                }
+                line-height: auto;
+                color: $purple;
+              }
+            }
+            > .bottomtxt {
+              p {
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 14;
+                }
+                color: #898989;
+              }
+            }
+            > .btnBlock {
+              > .btn {
+                color: $white;
+                padding: {
+                  top: $oneVw * 8;
+                  bottom: $oneVw * 8;
+                  left: $oneVw * 30;
+                  right: $oneVw * 30;
+                }
+                border: {
+                  radius: $oneVw * 25;
+                  width: 0;
+                }
+                font: {
+                  family: $primary-font-bold;
+                  size: $oneVw * 12;
+                }
+                &:first-of-type {
+                  background: {
+                    color: $logoBgColor;
+                  }
+                  margin: {
+                    right: $oneVw * 30;
+                  }
+                }
+                &:last-of-type {
+                  background: {
+                    color: $navtxtColor;
+                  }
+                }
+              }
+            }
+            > .iconsBlock {
+              width: 100%;
+              padding: {
+                top: $oneVh * 50;
+              }
+              > ul {
+                width: inherit;
+                padding-left: 0;
+                margin-bottom: 0;
+                > li {
+                  float: left;
+                  list-style-type: none;
+                  margin-right: $oneVw * 30;
+                  > i {
+                    color: $black;
+                    font: {
+                      size: $oneVw * 30;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > .rightBlock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > .imageSection {
+              width: $oneVw * 350;
+              > img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+      > .horizantalStrips {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 40;
+        }
+        background: {
+          color: $black;
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > .block {
+            width: $oneVw * 250;
+            min-height: $oneVh * 150;
+            border-radius: $oneVw * 8;
+            padding: $oneVw * 15;
+            background: {
+              color: $hashColor;
+            }
+            box-shadow: 1px 2px 8px 3px rgba(255, 255, 255, 0.6);
+            > span {
+              width: 100%;
+              display: block;
+              color: $white;
+              &:first-of-type {
+                font: {
+                  family: $primary-font-bold;
+                  size: $oneVw * 18;
+                }
+              }
+              &:last-of-type {
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 18;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .features {
+        margin: {
+          top: $oneVh * 40;
+        }
+        > .title {
+          color: $black;
+          margin: {
+            bottom: $oneVh * 40;
+          }
+          margin: {
+              left: $oneVw * 45;
+          }
+          font: {
+            family: $primary-font-bold;
+            size: $oneVw * 50;
+          }
+        }
+        > .content {
+          padding: {
+            left: $oneVw * 75;
+            right: $oneVw * 75;
+          }
+          > div {
+            > .block {
+              float: left;
+              width: 100%;
+              > .card {
+                min-width: $oneVw * 250;
+                max-width: 100%;
+                align-items: center;
+                padding: $oneVw * 15;
+                margin: {
+                    bottom: $oneVh * 25;
+                }
+                > img {
+                  max-width: $oneVw * 200;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .otherFeatures{
+          padding: {
+              top: $oneVh * 40;
+              bottom: $oneVh * 40;
+          }
+          background: {
+              color: $black;
+          }
+          > .titleBlock {
+              margin: {
+                  bottom: $oneVh * 30;
+              }
+              > span {
+                  color: $white;
+                  display: block;
+                  text-align: center;
+                  &:first-of-type {
+                      font: {
+                          family: $primary-font-bold;
+                          size: $oneVw * 30;
+                      }
+                  }
+                  &:last-of-type {
+                    font: {
+                        family: $primary-font-regular;
+                        size: $oneVw * 18;
+                    }
+                }
+              }
+          }
+          > .contentBlock {
+              .card {
+                  background: {
+                      color: $hashColor;
+                  }
+                  > .card-body {
+                      > .card-title {
+                          color: $white;
+                          font: {
+                              family: $primary-font-bold;
+                              size: $oneVw * 18;
+                          }
+                      }
+                      > .card-text {
+                          color: $white;
+                          font: {
+                              family: $primary-font-regular;
+                              size: $oneVw * 16;
+                          }
+                      }
+                      > ul.featuresList {
+                          padding: {
+                              left: 0;
+                          }
+                          margin: {
+                              bottom: 0;
+                          }
+                          > li {
+                              list-style-type: none;
+                              color: $white;
+                              font: {
+                                  family: $primary-font-regular;
+                                  size: $oneVw * 16;
+                              }
+                              > i {
+                                  color: green;
+                                  font: {
+                                      size: $oneVw * 16;
+                                  }
+                                  margin: {
+                                      right: $oneVw * 15;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+}

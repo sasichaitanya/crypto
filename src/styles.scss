@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../src/assets/css/fonts.css";
+@import "./assets/scss/variables.scss";
+
+body {
+    overflow: {
+        x: hidden;
+        y: auto;
+    }
+}
