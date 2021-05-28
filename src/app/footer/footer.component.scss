@@ -1,0 +1,70 @@
+@import "../../assets/scss/variables.scss";
+
+.footerBlock {
+    background: {
+        image: url("../../assets/images/Fiverr39DragonBeach.png");
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    .solidBgcolor {
+        background: {
+            color: rgba(255,108,108, 0.8);
+        }
+        > .mainFooter {
+            padding: {
+                left: $oneVw * 100;
+                right: $oneVw * 100;
+                top: $oneVw * 100;
+                bottom: $oneVw * 50;
+            }
+            > .block{
+                > h3 {
+                    color: $white;
+                    font: {
+                        family: $primary-font-bold;
+                        size: $oneVw * 20;
+                    }
+                    margin: {
+                        bottom: $oneVh * 15;
+                    }
+                }
+                > ul {
+                    margin: {
+                        bottom: 0;
+                    }
+                    padding: {
+                        left: 0;
+                    }
+                    > li {
+                        list-style-type: none;
+                        margin: {
+                            bottom: $oneVh * 10;
+                        }
+                        > a {
+                            color: $white;
+                            text-decoration: none;
+                            font: {
+                                family: $primary-font-regular;
+                                size: $oneVw * 16;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > .secondFooter {
+            border-top: 1px solid $white;
+            padding: {
+                top: $oneVh * 30;
+                bottom: $oneVh * 30;
+            }
+            text-align: center;
+            color: $white;
+            font: {
+                family: $primary-font-regular;
+                size: $oneVw * 16;
+            }
+        }
+    }
+}
