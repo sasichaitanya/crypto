@@ -162,7 +162,7 @@
             bottom: $oneVh * 40;
           }
           margin: {
-              left: $oneVw * 45;
+            left: $oneVw * 45;
           }
           font: {
             family: $primary-font-bold;
@@ -184,7 +184,7 @@
                 align-items: center;
                 padding: $oneVw * 15;
                 margin: {
-                    bottom: $oneVh * 25;
+                  bottom: $oneVh * 25;
                 }
                 > img {
                   max-width: $oneVw * 200;
@@ -194,84 +194,104 @@
           }
         }
       }
-      > .otherFeatures{
-          padding: {
-              top: $oneVh * 40;
-              bottom: $oneVh * 40;
+      > .otherFeatures {
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 40;
+        }
+        background: {
+          color: $black;
+        }
+        > .titleBlock {
+          margin: {
+            bottom: $oneVh * 30;
           }
-          background: {
-              color: $black;
-          }
-          > .titleBlock {
-              margin: {
-                  bottom: $oneVh * 30;
+          > span {
+            color: $white;
+            display: block;
+            text-align: center;
+            &:first-of-type {
+              font: {
+                family: $primary-font-bold;
+                size: $oneVw * 30;
               }
-              > span {
-                  color: $white;
-                  display: block;
-                  text-align: center;
-                  &:first-of-type {
-                      font: {
-                          family: $primary-font-bold;
-                          size: $oneVw * 30;
-                      }
-                  }
-                  &:last-of-type {
-                    font: {
-                        family: $primary-font-regular;
-                        size: $oneVw * 18;
-                    }
+            }
+            &:last-of-type {
+              font: {
+                family: $primary-font-regular;
+                size: $oneVw * 18;
+              }
+            }
+          }
+        }
+        > .contentBlock {
+          .card {
+            background: {
+              color: $hashColor;
+            }
+            > .card-body {
+              > .card-title {
+                color: $white;
+                font: {
+                  family: $primary-font-bold;
+                  size: $oneVw * 18;
                 }
               }
-          }
-          > .contentBlock {
-              .card {
-                  background: {
-                      color: $hashColor;
-                  }
-                  > .card-body {
-                      > .card-title {
-                          color: $white;
-                          font: {
-                              family: $primary-font-bold;
-                              size: $oneVw * 18;
-                          }
-                      }
-                      > .card-text {
-                          color: $white;
-                          font: {
-                              family: $primary-font-regular;
-                              size: $oneVw * 16;
-                          }
-                      }
-                      > ul.featuresList {
-                          padding: {
-                              left: 0;
-                          }
-                          margin: {
-                              bottom: 0;
-                          }
-                          > li {
-                              list-style-type: none;
-                              color: $white;
-                              font: {
-                                  family: $primary-font-regular;
-                                  size: $oneVw * 16;
-                              }
-                              > i {
-                                  color: green;
-                                  font: {
-                                      size: $oneVw * 16;
-                                  }
-                                  margin: {
-                                      right: $oneVw * 15;
-                                  }
-                              }
-                          }
-                      }
-                  }
+              > .card-text {
+                color: $white;
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 16;
+                }
               }
+              > ul.featuresList {
+                padding: {
+                  left: 0;
+                }
+                margin: {
+                  bottom: 0;
+                }
+                > li {
+                  list-style-type: none;
+                  color: $white;
+                  font: {
+                    family: $primary-font-regular;
+                    size: $oneVw * 16;
+                  }
+                  > i {
+                    color: green;
+                    font: {
+                      size: $oneVw * 16;
+                    }
+                    margin: {
+                      right: $oneVw * 15;
+                    }
+                  }
+                }
+              }
+            }
           }
+        }
+      }
+      > .roadMap {
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 40;
+        }
+        > .title {
+            color: $black;
+            margin: {
+              bottom: $oneVh * 40;
+            }
+            margin: {
+              left: $oneVw * 45;
+            }
+            font: {
+              family: $primary-font-bold;
+              size: $oneVw * 50;
+            }
+          }
+          > .mapContent{}
       }
     }
   }

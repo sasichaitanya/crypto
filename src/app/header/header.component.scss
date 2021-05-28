@@ -2,6 +2,9 @@
 
 nav {
   .logo {
+      > img {
+          width: $oneVw * 50;
+      }
     font: {
       family: $primary-font-bold;
       size: $oneVw * 22;
