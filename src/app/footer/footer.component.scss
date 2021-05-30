@@ -2,21 +2,23 @@
 
 .footerBlock {
     background: {
-        image: url("../../assets/images/Fiverr39DragonBeach.png");
+        image: url("../../assets/images/footerBg.jpg");
         repeat: no-repeat;
         position: center;
         size: cover;
     }
     .solidBgcolor {
         background: {
-            color: rgba(255,108,108, 0.8);
+            // color: rgba(255,108,108, 0.8);
+            color: transparent;
         }
         > .mainFooter {
+            opacity: 0;
             padding: {
                 left: $oneVw * 100;
                 right: $oneVw * 100;
                 top: $oneVw * 100;
-                bottom: $oneVw * 50;
+                bottom: $oneVw * 100;
             }
             > .block{
                 > h3 {
@@ -59,7 +61,7 @@
                 top: $oneVh * 30;
                 bottom: $oneVh * 30;
             }
-            text-align: center;
+            text-align: right;
             color: $white;
             font: {
                 family: $primary-font-regular;

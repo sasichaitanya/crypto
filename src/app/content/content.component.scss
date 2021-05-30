@@ -201,6 +201,33 @@
             }
           }
         }
+        &.blockTwo {
+          > div {
+            > .rightBlock {
+              padding: {
+                left: $oneVw * 150;
+                right: $oneVw * 150;
+              }
+              > h2 {
+                color: $purple;
+                margin: {
+                  bottom: $oneVh * 15;
+                }
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 42;
+                }
+              }
+              > p {
+                color: $gray;
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 18;
+                }
+              }
+            }
+          }
+        }
       }
       > .features {
         background: {
@@ -550,6 +577,203 @@
               }
               .title {
                 font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      > .howToBuy {
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 60;
+        }
+        background: {
+          color: $lightPurple;
+        }
+        > .title {
+          color: $black;
+          text-align: center;
+          margin: {
+            bottom: $oneVh * 40;
+          }
+          margin: {
+            left: $oneVw * 45;
+          }
+          font: {
+            family: $primary-font-bold;
+            size: $oneVw * 50;
+          }
+        }
+        > .content {
+          > .block {
+            padding: {
+              left: $oneVw * 150;
+              right: $oneVw * 150;
+            }
+            > nav {
+              margin: {
+                bottom: $oneVh * 15;
+              }
+              > div {
+                justify-content: center;
+                border-bottom: none;
+                > button {
+                  border: none;
+                  color: $purple;
+                  margin: {
+                    right: $oneVw * 20;
+                  }
+                  padding: {
+                    bottom: $oneVh * 15;
+                    left: $oneVw * 5;
+                    right: $oneVw * 5;
+                  }
+                  font: {
+                    family: $primary-font-bold;
+                  }
+                  &.nav-link.active {
+                    border: none;
+                    color: $purple;
+                    font: {
+                      family: $primary-font-bold;
+                    }
+                    background: {
+                      color: transparent;
+                    }
+                    border-bottom: 2px solid $purple;
+                  }
+                }
+              }
+            }
+            > .tab-content {
+              > .tab-pane {
+                color: $gray;
+                font: {
+                  family: $primary-font-regular;
+                  size: $oneVw * 18;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .documentsBlock {
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 40;
+        }
+        background: {
+          image: url("../../assets/images/documentBg.jpg");
+          repeat: no-repeat;
+          size: cover;
+          position: center;
+        }
+        > .title {
+          text-align: center;
+          margin: {
+            bottom: $oneVh * 30;
+          }
+          font: {
+            family: $primary-font-bold;
+            size: $oneVw * 42;
+          }
+          color: $white;
+        }
+        > .content {
+          > .blocks {
+            width: 90%;
+            margin: 0 5%;
+            float: left;
+            > div {
+              display: flex;
+              justify-content: center;
+              margin: {
+                bottom: $oneVh * 15;
+              }
+              > .block {
+                float: left;
+                width: $oneVw * 200;
+                margin: {
+                  bottom: $oneVh * 15;
+                }
+                > .imgBlock {
+                  float: left;
+                  width: $oneVw * 200;
+                  height: $oneVw * 300;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: {
+                    color: $white;
+                  }
+                  border: {
+                    radius: $oneVw * 6;
+                  }
+                  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.4);
+                  > img {
+                    max-width: 90%;
+                  }
+                }
+                > span {
+                  float: left;
+                  width: 100%;
+                  text-align: center;
+                  color: $white;
+                  font: {
+                    family: $primary-font-bold;
+                    size: $oneVw * 18;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > .faqBlock {
+        padding: {
+          top: $oneVh * 40;
+          bottom: $oneVh * 40;
+        }
+        background: {
+          // image: url("../../assets/images/documentBg.jpg");
+          color: #0f053c;
+          repeat: no-repeat;
+          size: cover;
+          position: center;
+        }
+        > .title {
+          text-align: center;
+          margin: {
+            bottom: $oneVh * 30;
+          }
+          font: {
+            family: $primary-font-bold;
+            size: $oneVw * 42;
+          }
+          color: $white;
+        }
+        > .content {
+          > .accordion {
+            padding: {
+              left: $oneVw * 100;
+              right: $oneVw * 100;
+            }
+            > .accordion-item {
+              border: none;
+              background: transparent;
+              > .accordion-header {
+                > .accordion-button {
+                  background: {
+                    color: #2f2278;
+                  }
+                  color: $white;
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+              }
+              > .accordion-collapse {
+                color: $white;
               }
             }
           }
