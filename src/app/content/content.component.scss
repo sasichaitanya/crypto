@@ -4,7 +4,7 @@
   > .row {
     > div {
       > .topSection {
-        min-height: $oneVw * 590;
+        min-height: $oneVw * 850;
         padding-top: $oneVh * 25;
         background: {
           color: transparent;
@@ -19,7 +19,8 @@
           }
           > .leftBlock {
             padding: {
-              right: $oneVw * 350;
+              // right: $oneVw * 350;
+              left: $oneVw * 80;
             }
             > div {
               padding: {
@@ -31,12 +32,16 @@
                 width: 100%;
                 display: block;
                 font: {
-                  family: $primary-font-bold;
-                  // family: 'robotobold';
-                  size: $oneVw * 50;
+                  // family: $primary-font-bold;
+                  family: 'poppinsregular';
+                  size: $oneVw * 80;
                 }
-                line-height: auto;
                 color: $purple;
+                &:last-of-type {
+                  font: {
+                    family: 'poppinsextrabold';
+                  }
+                }
               }
             }
             > .bottomtxt {
@@ -50,6 +55,9 @@
               }
             }
             > .btnBlock {
+              margin: {
+                top: $oneVw * 15;
+              }
               > .btn {
                 color: $white;
                 padding: {
@@ -63,20 +71,18 @@
                   width: 0;
                 }
                 font: {
-                  family: $primary-font-bold;
+                  // family: $primary-font-bold;
+                  family: 'poppinssemibold';
                   size: $oneVw * 14;
                 }
                 &:first-of-type {
                   background: {
-                    color: $logoBgColor;
+                    // color: $logoBgColor;
+                    color: #9f4c91;
+                    image: linear-gradient(to right, #9f4c91, #6854ad);
                   }
                   margin: {
                     right: $oneVw * 30;
-                  }
-                }
-                &:last-of-type {
-                  background: {
-                    color: $navtxtColor;
                   }
                 }
               }
@@ -95,7 +101,8 @@
                   list-style-type: none;
                   margin-right: $oneVw * 30;
                   > i {
-                    color: $black;
+                    // color: $black;
+                    color: #7d4385;
                     font: {
                       size: $oneVw * 30;
                     }
@@ -218,19 +225,21 @@
                 right: $oneVw * 150;
               }
               > h2 {
-                color: $purple;
+                color: #9f4c91;
                 margin: {
                   bottom: $oneVh * 15;
                 }
                 font: {
-                  family: $primary-font-regular;
-                  size: $oneVw * 42;
+                  // family: $primary-font-regular;
+                  family: 'poppinsbold';
+                  size: $oneVw * 35;
                 }
               }
               > p {
                 color: $gray;
                 font: {
-                  family: $primary-font-regular;
+                  // family: $primary-font-regular;
+                  family: 'poppinsregular';
                   size: $oneVw * 18;
                 }
               }
@@ -246,7 +255,8 @@
           top: $oneVh * 40;
         }
         > .title {
-          color: $black;
+          // color: $black;
+          color: #9f4c91;
           margin: {
             bottom: $oneVh * 40;
           }
@@ -254,8 +264,9 @@
             left: $oneVw * 45;
           }
           font: {
-            family: $primary-font-bold;
-            size: $oneVw * 50;
+            // family: $primary-font-bold;
+            family: 'poppinsbold';
+            size: $oneVw * 35;
           }
         }
         > .content {
@@ -368,7 +379,8 @@
           bottom: $oneVh * 40;
         }
         > .title {
-          color: $black;
+          // color: $black;
+          color: #9f4c91;
           margin: {
             bottom: $oneVh * 40;
           }
@@ -376,8 +388,9 @@
             left: $oneVw * 45;
           }
           font: {
-            family: $primary-font-bold;
-            size: $oneVw * 50;
+            // family: $primary-font-bold;
+            family: "poppinsbold";
+            size: $oneVw * 35;
           }
         }
         > .mapContent {
@@ -600,7 +613,8 @@
           color: $lightPurple;
         }
         > .title {
-          color: $black;
+          // color: $black;
+          color: #9f4c91;
           text-align: center;
           margin: {
             bottom: $oneVh * 40;
@@ -609,8 +623,8 @@
             left: $oneVw * 45;
           }
           font: {
-            family: $primary-font-bold;
-            size: $oneVw * 50;
+            family: "poppinsbold";
+            size: $oneVw * 35;
           }
         }
         > .content {
@@ -683,8 +697,8 @@
             bottom: $oneVh * 30;
           }
           font: {
-            family: $primary-font-bold;
-            size: $oneVw * 42;
+            family: "poppinsbold";
+            size: $oneVw * 35;
           }
           color: $white;
         }
@@ -756,8 +770,8 @@
             bottom: $oneVh * 30;
           }
           font: {
-            family: $primary-font-bold;
-            size: $oneVw * 42;
+            family: "poppinsbold";
+            size: $oneVw * 35;
           }
           color: $white;
         }

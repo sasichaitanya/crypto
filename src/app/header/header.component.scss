@@ -23,13 +23,25 @@ nav {
   }
   .nav-item {
     margin: {
-      right: $oneVw * 30;
+      right: $oneVw * 20;
     }
     a.nav-link {
       color: $navtxtColor;
+      border-radius: $oneVw * 27;
+      padding: {
+        left: $oneVw * 15;
+        right: $oneVw * 15;
+      }
       font: {
-        family: $primary-font-regular;
+        // family: $primary-font-regular;
+        family: 'poppinssemibold';
         size: $oneVw * 16;
+      }
+      &.active, &:hover {
+        background: {
+          color: $navtxtColor;
+        }
+        color: $white;
       }
     }
   }
