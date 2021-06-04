@@ -11,7 +11,7 @@ nav {
     }
     color: $white;
     background: {
-      color: $logoBgColor;
+      // color: $logoBgColor;
     }
     padding: {
       left: $oneVw * 15;
@@ -22,6 +22,9 @@ nav {
     }
   }
   .nav-item {
+    margin: {
+      right: $oneVw * 30;
+    }
     a.nav-link {
       color: $navtxtColor;
       font: {

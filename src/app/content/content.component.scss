@@ -7,16 +7,23 @@
         min-height: $oneVw * 590;
         padding-top: $oneVh * 25;
         background: {
-          color: $topSectionColor;
+          color: transparent;
+          image: url('../../assets/images/topBg.png');
+          repeat: no-repeat;
+          size: cover;
+          position: center;
         }
         > .topContentSection {
           padding: {
             top: $oneVh * 30;
           }
           > .leftBlock {
+            padding: {
+              right: $oneVw * 350;
+            }
             > div {
               padding: {
-                left: $oneVw * 47;
+                // left: $oneVw * 47;
               }
             }
             > .toptxt {
@@ -25,7 +32,8 @@
                 display: block;
                 font: {
                   family: $primary-font-bold;
-                  size: $oneVw * 105;
+                  // family: 'robotobold';
+                  size: $oneVw * 50;
                 }
                 line-height: auto;
                 color: $purple;
@@ -35,9 +43,10 @@
               p {
                 font: {
                   family: $primary-font-regular;
-                  size: $oneVw * 14;
+                  size: $oneVw * 18;
                 }
-                color: #898989;
+                line-height: $oneVw * 28;
+                color: $black;
               }
             }
             > .btnBlock {
@@ -55,7 +64,7 @@
                 }
                 font: {
                   family: $primary-font-bold;
-                  size: $oneVw * 12;
+                  size: $oneVw * 14;
                 }
                 &:first-of-type {
                   background: {

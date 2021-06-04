@@ -42,3 +42,54 @@
     src: url('../font/fontawesome-webfont.eot');
     src: url('../font/fontawesome-webfont.woff2') format('woff2'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('ttf'), url('../font/fontawesome-webfont.svg') format('svg');
 }
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../font/monister/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../font/monister/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../font/monister/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../font/monister/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat_alternatesbold';
+    src: url('../font/monister/montserratalternates-bold-webfont.woff2') format('woff2'),
+         url('../font/monister/montserratalternates-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
