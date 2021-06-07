@@ -3,6 +3,11 @@
 @import "./assets/scss/variables.scss";
 
 body {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     overflow: {
         x: hidden;
         y: auto;

@@ -8,7 +8,7 @@
         padding-top: $oneVh * 25;
         background: {
           color: transparent;
-          image: url('../../assets/images/topBg.png');
+          image: url("../../assets/images/topBg.png");
           repeat: no-repeat;
           size: cover;
           position: center;
@@ -33,13 +33,13 @@
                 display: block;
                 font: {
                   // family: $primary-font-bold;
-                  family: 'poppinsregular';
+                  family: "poppinsregular";
                   size: $oneVw * 80;
                 }
                 color: $purple;
                 &:last-of-type {
                   font: {
-                    family: 'poppinsextrabold';
+                    family: "poppinsextrabold";
                   }
                 }
               }
@@ -72,7 +72,7 @@
                 }
                 font: {
                   // family: $primary-font-bold;
-                  family: 'poppinssemibold';
+                  family: "poppinssemibold";
                   size: $oneVw * 14;
                 }
                 &:first-of-type {
@@ -231,7 +231,7 @@
                 }
                 font: {
                   // family: $primary-font-regular;
-                  family: 'poppinsbold';
+                  family: "poppinsbold";
                   size: $oneVw * 35;
                 }
               }
@@ -239,7 +239,7 @@
                 color: $gray;
                 font: {
                   // family: $primary-font-regular;
-                  family: 'poppinsregular';
+                  family: "poppinsregular";
                   size: $oneVw * 18;
                 }
               }
@@ -265,7 +265,7 @@
           }
           font: {
             // family: $primary-font-bold;
-            family: 'poppinsbold';
+            family: "poppinsbold";
             size: $oneVw * 35;
           }
         }
@@ -288,6 +288,23 @@
                 }
                 > img {
                   max-width: $oneVw * 200;
+                }
+                > .card-body {
+                  > .card-title {
+                    > span {
+                      font: {
+                        family: "poppinsmedium";
+                        size: 10px;
+                      }
+                      color: #fff;
+                      text: {
+                        transform: uppercase;
+                      }
+                      background-color: rgba(0,0,0,0.7);
+                      padding: 2px 3px;
+                      border-radius: 2px;
+                    }
+                  }
                 }
               }
             }
@@ -330,8 +347,12 @@
               color: $hashColor;
             }
             > .card-body {
+              float: left;
               > .card-title {
                 color: $white;
+                text: {
+                  transform: uppercase;
+                }
                 font: {
                   family: $primary-font-bold;
                   size: $oneVw * 18;
