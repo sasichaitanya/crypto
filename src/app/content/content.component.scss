@@ -19,8 +19,7 @@
           }
           > .leftBlock {
             padding: {
-              // right: $oneVw * 350;
-              left: $oneVw * 80;
+              left: $oneVw * 30;
             }
             > div {
               padding: {
@@ -70,20 +69,14 @@
                   radius: $oneVw * 25;
                   width: 0;
                 }
+                background: {
+                  color: #9f4c91;
+                  image: linear-gradient(to right, #9f4c91, #6854ad);
+                }
                 font: {
                   // family: $primary-font-bold;
                   family: "poppinssemibold";
                   size: $oneVw * 14;
-                }
-                &:first-of-type {
-                  background: {
-                    // color: $logoBgColor;
-                    color: #9f4c91;
-                    image: linear-gradient(to right, #9f4c91, #6854ad);
-                  }
-                  margin: {
-                    right: $oneVw * 30;
-                  }
                 }
               }
             }
@@ -130,32 +123,50 @@
         justify-content: center;
         padding: {
           top: $oneVh * 40;
-          bottom: $oneVh * 40;
+          bottom: $oneVh * 100;
         }
         background: {
-          color: $black;
+          color: $gray;
+        }
+        > .title {
+          text-align: center;
+          margin: {
+            bottom: $oneVh * 30;
+          }
+          font: {
+            family: "poppinsbold";
+            size: $oneVw * 35;
+          }
+          color: $white;
         }
         > div {
           display: flex;
           align-items: center;
           justify-content: center;
           > .block {
-            width: $oneVw * 250;
+            width: $oneVw * 350;
             min-height: $oneVh * 150;
             border-radius: $oneVw * 8;
-            padding: $oneVw * 15;
+            padding: $oneVw * 50 $oneVw * 15;
+            text-align: center;
             background: {
-              color: $hashColor;
+              color: $white;
             }
-            box-shadow: 1px 2px 8px 3px rgba(255, 255, 255, 0.6);
+            transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            border: 1px solid rgba(33, 40, 50, 0.125) !important;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
             > span {
               width: 100%;
               display: block;
-              color: $white;
+              color: $black;
               &:first-of-type {
                 font: {
-                  family: $primary-font-bold;
-                  size: $oneVw * 18;
+                  family: $primary-font-regular;
+                  size: $oneVw * 24;
                 }
               }
               &:last-of-type {
@@ -164,6 +175,10 @@
                   size: $oneVw * 18;
                 }
               }
+            }
+            &:hover {
+              box-shadow: none;
+              transform: translate(0px, -10px);
             }
           }
         }
@@ -176,10 +191,20 @@
         > div {
           display: flex;
           align-items: center;
+          justify-content: center;
           > .leftBlock {
-            max-width: 100%;
+            height: $oneVw * 350;
+            width: $oneVw * 450;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             > img {
               max-width: 100%;
+              transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              -moz-transform: rotate(90deg);
+              -webkit-transform: rotate(90deg);
             }
           }
           > .rightBlock {
@@ -254,6 +279,9 @@
         margin: {
           top: $oneVh * 40;
         }
+        padding: {
+          top: $oneVh * 40;
+        }
         > .title {
           // color: $black;
           color: #9f4c91;
@@ -278,16 +306,23 @@
             > .block {
               float: left;
               width: 100%;
+              height: $oneVw * 350;
+              margin: {
+                bottom: $oneVh * 25;
+              }
               > .card {
                 min-width: $oneVw * 250;
                 max-width: 100%;
                 align-items: center;
                 padding: $oneVw * 15;
-                margin: {
-                  bottom: $oneVh * 25;
-                }
-                > img {
-                  max-width: $oneVw * 200;
+                > .imgBlock {
+                  float: left;
+                  width: $oneVw * 200;
+                  height: $oneVw * 150;
+                  > img {
+                    max-width: 100%;
+                    max-height: 100%;
+                  }
                 }
                 > .card-body {
                   > .card-title {
@@ -300,10 +335,14 @@
                       text: {
                         transform: uppercase;
                       }
-                      background-color: rgba(0,0,0,0.7);
+                      background-color: rgba(0, 0, 0, 0.7);
                       padding: 2px 3px;
                       border-radius: 2px;
                     }
+                  }
+                  > .card-text {
+                    height: $oneVw * 100;
+                    overflow: hidden;
                   }
                 }
               }
@@ -511,6 +550,25 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+              }
+              > ul {
+                padding: {
+                  left: $oneVw * 20;
+                }
+                margin: {
+                  bottom: 0;
+                }
+                > li {
+                  list-style-type: disc;
+                  margin: {
+                    bottom: $oneVw * 5;
+                  }
+                  color: $black;
+                  font: {
+                    family: $primary-font-regular;
+                    size: $oneVw * 18;
+                  }
+                }
               }
             }
             .timeline-icon {
@@ -780,7 +838,7 @@
         }
         background: {
           // image: url("../../assets/images/documentBg.jpg");
-          color: #0f053c;
+          color: $white;
           repeat: no-repeat;
           size: cover;
           position: center;
@@ -794,7 +852,7 @@
             family: "poppinsbold";
             size: $oneVw * 35;
           }
-          color: $white;
+          color: $black;
         }
         > .content {
           > .accordion {
@@ -806,18 +864,49 @@
               border: none;
               background: transparent;
               > .accordion-header {
+                border-bottom: 1px solid #e3e3e3;
                 > .accordion-button {
+                  box-shadow: none;
                   background: {
-                    color: #2f2278;
+                    color: $white;
                   }
-                  color: $white;
+                  font: {
+                    family: $primary-font-regular;
+                    size: $oneVw * 18;
+                  }
+                  color: $black;
                   &:focus {
                     box-shadow: none;
                   }
                 }
               }
               > .accordion-collapse {
-                color: $white;
+                color: $black;
+                > .accordion-body {
+                  font: {
+                    family: $primary-font-regular;
+                    size: $oneVw * 18;
+                  }
+                  > ul {
+                    padding: {
+                      left: $oneVw * 15;
+                    }
+                    margin: {
+                      bottom: 0;
+                    }
+                    > li {
+                      list-style-type: disc;
+                      margin: {
+                        bottom: $oneVw * 5;
+                      }
+                      font: {
+                        family: $primary-font-regular;
+                        size: $oneVw * 18;
+                      }
+                      color: $black;
+                    }
+                  }
+                }
               }
             }
           }

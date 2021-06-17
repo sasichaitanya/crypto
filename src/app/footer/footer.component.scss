@@ -1,72 +1,124 @@
 @import "../../assets/scss/variables.scss";
 
 .footerBlock {
+  background: {
+    image: url("../../assets/images/footerBg.jpg");
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  .solidBgcolor {
     background: {
-        image: url("../../assets/images/footerBg.jpg");
-        repeat: no-repeat;
-        position: center;
-        size: cover;
+      // color: rgba(255,108,108, 0.8);
+      color: transparent;
     }
-    .solidBgcolor {
-        background: {
-            // color: rgba(255,108,108, 0.8);
-            color: transparent;
+    > .mainFooter {
+      opacity: 0;
+      padding: {
+        left: $oneVw * 100;
+        right: $oneVw * 100;
+        top: $oneVw * 100;
+        bottom: $oneVw * 100;
+      }
+      > .block {
+        > h3 {
+          color: $white;
+          font: {
+            family: $primary-font-bold;
+            size: $oneVw * 20;
+          }
+          margin: {
+            bottom: $oneVh * 15;
+          }
         }
-        > .mainFooter {
-            opacity: 0;
-            padding: {
-                left: $oneVw * 100;
-                right: $oneVw * 100;
-                top: $oneVw * 100;
-                bottom: $oneVw * 100;
+        > ul {
+          margin: {
+            bottom: 0;
+          }
+          padding: {
+            left: 0;
+          }
+          > li {
+            list-style-type: none;
+            margin: {
+              bottom: $oneVh * 10;
             }
-            > .block{
-                > h3 {
-                    color: $white;
-                    font: {
-                        family: $primary-font-bold;
-                        size: $oneVw * 20;
-                    }
-                    margin: {
-                        bottom: $oneVh * 15;
-                    }
-                }
-                > ul {
-                    margin: {
-                        bottom: 0;
-                    }
-                    padding: {
-                        left: 0;
-                    }
-                    > li {
-                        list-style-type: none;
-                        margin: {
-                            bottom: $oneVh * 10;
-                        }
-                        > a {
-                            color: $white;
-                            text-decoration: none;
-                            font: {
-                                family: $primary-font-regular;
-                                size: $oneVw * 16;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        > .secondFooter {
-            border-top: 1px solid $white;
-            padding: {
-                top: $oneVh * 30;
-                bottom: $oneVh * 30;
-            }
-            text-align: right;
-            color: $white;
-            font: {
+            > a {
+              color: $white;
+              text-decoration: none;
+              font: {
                 family: $primary-font-regular;
                 size: $oneVw * 16;
+              }
             }
+          }
         }
+      }
     }
+    .navFooter {
+      margin: {
+        bottom: $oneVw * 20;
+      }
+      > div {
+        > .iconsBlock {
+          float: right;
+          > ul {
+            width: inherit;
+            padding-left: 0;
+            margin-bottom: 0;
+            > li {
+              float: left;
+              list-style-type: none;
+              margin-right: $oneVw * 30;
+              > i {
+                  color: $white;
+                font: {
+                  size: $oneVw * 30;
+                }
+              }
+            }
+          }
+        }
+        > ul {
+          float: right;
+          padding: {
+            left: 0;
+          }
+          margin: {
+            bottom: 0;
+          }
+          > li {
+            float: left;
+            list-style-type: none;
+            margin: {
+              right: $oneVw * 15;
+            }
+            > a {
+              font: {
+                family: $primary-font-bold;
+                size: $oneVw * 18;
+              }
+              text: {
+                decoration: none;
+              }
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    > .secondFooter {
+      border-top: 1px solid $white;
+      padding: {
+        top: $oneVh * 30;
+        bottom: $oneVh * 30;
+      }
+      text-align: right;
+      color: $white;
+      font: {
+        family: $primary-font-regular;
+        size: $oneVw * 16;
+      }
+    }
+  }
 }
