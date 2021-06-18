@@ -4,8 +4,8 @@
   > .row {
     > div {
       > .topSection {
-        min-height: $oneVw * 850;
-        padding-top: $oneVh * 25;
+        min-height: 85rem;
+        padding-top: 2.5rem;
         background: {
           color: transparent;
           image: url("../../assets/images/topBg.png");
@@ -15,11 +15,11 @@
         }
         > .topContentSection {
           padding: {
-            top: $oneVh * 30;
+            top: 3rem;
           }
           > .leftBlock {
             padding: {
-              left: $oneVw * 30;
+              left: 3rem;
             }
             > div {
               padding: {
@@ -31,42 +31,36 @@
                 width: 100%;
                 display: block;
                 font: {
-                  // family: $primary-font-bold;
                   family: "poppinsregular";
-                  size: $oneVw * 80;
+                  size: 8rem;
                 }
                 color: $purple;
-                &:last-of-type {
-                  font: {
-                    family: "poppinsextrabold";
-                  }
-                }
               }
             }
             > .bottomtxt {
               p {
                 font: {
                   family: $primary-font-regular;
-                  size: $oneVw * 18;
+                  size: 1.8rem;
                 }
-                line-height: $oneVw * 28;
+                line-height: 2.8rem;
                 color: $black;
               }
             }
             > .btnBlock {
               margin: {
-                top: $oneVw * 15;
+                top: 1.5rem;
               }
               > .btn {
                 color: $white;
                 padding: {
-                  top: $oneVw * 8;
-                  bottom: $oneVw * 8;
-                  left: $oneVw * 30;
-                  right: $oneVw * 30;
+                  top: 0.8rem;
+                  bottom: 0.8rem;
+                  left: 3rem;
+                  right: 3rem;
                 }
                 border: {
-                  radius: $oneVw * 25;
+                  radius: 2.5rem;
                   width: 0;
                 }
                 background: {
@@ -76,7 +70,7 @@
                 font: {
                   // family: $primary-font-bold;
                   family: "poppinssemibold";
-                  size: $oneVw * 14;
+                  size: 1.4rem;
                 }
               }
             }
@@ -122,8 +116,8 @@
         align-items: center;
         justify-content: center;
         padding: {
-          top: $oneVh * 40;
-          bottom: $oneVh * 100;
+          top: 4rem;
+          bottom: 10rem;
         }
         background: {
           color: $gray;
@@ -131,11 +125,11 @@
         > .title {
           text-align: center;
           margin: {
-            bottom: $oneVh * 30;
+            bottom: 3rem;
           }
           font: {
             family: "poppinsbold";
-            size: $oneVw * 35;
+            size: 3.5rem;
           }
           color: $white;
         }
@@ -144,10 +138,10 @@
           align-items: center;
           justify-content: center;
           > .block {
-            width: $oneVw * 350;
+            width: 35rem;
             min-height: $oneVh * 150;
-            border-radius: $oneVw * 8;
-            padding: $oneVw * 50 $oneVw * 15;
+            border-radius: 0.8rem;
+            padding: 5rem 1.5rem;
             text-align: center;
             background: {
               color: $white;
@@ -158,7 +152,7 @@
             -moz-transition: all 0.5s;
             -webkit-transition: all 0.5s;
             border: 1px solid rgba(33, 40, 50, 0.125) !important;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 1.4rem 2.8rem, rgba(0, 0, 0, 0.22) 0px 1rem 1rem;
             > span {
               width: 100%;
               display: block;
@@ -166,35 +160,35 @@
               &:first-of-type {
                 font: {
                   family: $primary-font-regular;
-                  size: $oneVw * 24;
+                  size: 2.4rem;
                 }
               }
               &:last-of-type {
                 font: {
                   family: $primary-font-regular;
-                  size: $oneVw * 18;
+                  size: 1.8rem;
                 }
               }
             }
             &:hover {
               box-shadow: none;
-              transform: translate(0px, -10px);
+              transform: translate(0px, -1rem);
             }
           }
         }
       }
       > .verticalStrips {
         padding: {
-          top: $oneVh * 80;
-          bottom: $oneVh * 80;
+          top: 8rem;
+          bottom: 8rem;
         }
         > div {
           display: flex;
           align-items: center;
           justify-content: center;
           > .leftBlock {
-            height: $oneVw * 350;
-            width: $oneVw * 450;
+            height: 35rem;
+            width: 45rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -212,7 +206,7 @@
             > .block {
               width: 100%;
               margin: {
-                bottom: $oneVh * 40;
+                bottom: 4rem;
               }
               > span {
                 width: 100%;
@@ -224,13 +218,13 @@
                 &:first-of-type {
                   color: $logoBgColor;
                   font: {
-                    size: $oneVw * 40;
+                    size: 4rem;
                   }
                 }
                 &:last-of-type {
                   color: $gray;
                   font: {
-                    size: $oneVw * 26;
+                    size: 2.6rem;
                   }
                 }
               }
@@ -277,48 +271,48 @@
           color: $topSectionColor;
         }
         margin: {
-          top: $oneVh * 40;
+          top: 4rem;
         }
         padding: {
-          top: $oneVh * 40;
+          top: 4rem;
         }
         > .title {
           // color: $black;
           color: #9f4c91;
           margin: {
-            bottom: $oneVh * 40;
+            bottom: 4rem;
           }
           margin: {
-            left: $oneVw * 45;
+            left: 4.5rem;
           }
           font: {
             // family: $primary-font-bold;
             family: "poppinsbold";
-            size: $oneVw * 35;
+            size: 3.5rem;
           }
         }
         > .content {
           padding: {
-            left: $oneVw * 75;
-            right: $oneVw * 75;
+            left: 7.5rem;
+            right: 7.5rem;
           }
           > div {
             > .block {
               float: left;
               width: 100%;
-              height: $oneVw * 350;
+              height: 35rem;
               margin: {
-                bottom: $oneVh * 25;
+                bottom: 2.5rem;
               }
               > .card {
-                min-width: $oneVw * 250;
+                min-width: 25rem;
                 max-width: 100%;
                 align-items: center;
-                padding: $oneVw * 15;
+                padding: 1.5rem;
                 > .imgBlock {
                   float: left;
-                  width: $oneVw * 200;
-                  height: $oneVw * 150;
+                  width: 20rem;
+                  height: 15rem;
                   > img {
                     max-width: 100%;
                     max-height: 100%;
@@ -341,7 +335,10 @@
                     }
                   }
                   > .card-text {
-                    height: $oneVw * 100;
+                    height: 10rem;
+                    font: {
+                      size: 1.4rem;
+                    }
                     overflow: hidden;
                   }
                 }
@@ -435,22 +432,22 @@
       }
       > .roadMap {
         padding: {
-          top: $oneVh * 40;
-          bottom: $oneVh * 40;
+          top: 4rem;
+          bottom: 4rem;
         }
         > .title {
           // color: $black;
           color: #9f4c91;
           margin: {
-            bottom: $oneVh * 40;
+            bottom: 4rem;
           }
           margin: {
-            left: $oneVw * 45;
+            left: 4.5rem;
           }
           font: {
             // family: $primary-font-bold;
             family: "poppinsbold";
-            size: $oneVw * 35;
+            size: 3.5rem;
           }
         }
         > .mapContent {
@@ -463,16 +460,16 @@
             }
             .timeline {
               width: calc(50% + 110px);
-              margin: 0 0 30px;
+              margin: 0 0 3rem;
               float: right;
               &:nth-child(even) {
                 float: left;
                 .timeline-content {
-                  padding: 25px 175px 25px 25px;
+                  padding: 2.5rem 17.5rem 2.5rem 2.5rem;
                   text-decoration: none;
 
                   &:before {
-                    border-left-width: 30px;
+                    border-left-width: 3rem;
                     border-right-width: 0;
                     left: auto;
                     right: 0;
@@ -480,12 +477,12 @@
                 }
                 .timeline-year {
                   left: auto;
-                  right: -10px;
+                  right: -1rem;
                 }
                 .timeline-icon {
                   box-shadow: -1px 1px 0px #fff inset, 0 0 8px rgba(0, 0, 0, 0.4);
                   left: auto;
-                  right: 62px;
+                  right: 6.2rem;
                 }
               }
               &:nth-child(4n + 2) {
@@ -533,8 +530,8 @@
             }
             .timeline-content {
               background: #fff;
-              padding: 25px 25px 25px 175px;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              padding: 2.5rem 2.5rem 2.5rem 17.5rem;
+              box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
               display: block;
               position: relative;
               &:hover {
@@ -546,14 +543,14 @@
                 width: 125px;
                 height: 100%;
                 border: 0 solid #b46a17;
-                border-right-width: 30px;
+                border-right-width: 3rem;
                 position: absolute;
                 top: 0;
                 left: 0;
               }
               > ul {
                 padding: {
-                  left: $oneVw * 20;
+                  left: 2rem;
                 }
                 margin: {
                   bottom: 0;
@@ -561,12 +558,12 @@
                 > li {
                   list-style-type: disc;
                   margin: {
-                    bottom: $oneVw * 5;
+                    bottom: 0.5rem;
                   }
                   color: $black;
                   font: {
                     family: $primary-font-regular;
-                    size: $oneVw * 18;
+                    size: 1.8rem;
                   }
                 }
               }
@@ -574,38 +571,38 @@
             .timeline-icon {
               color: #fff;
               background: #b46a17;
-              font-size: 45px;
+              font-size: 4.5rem;
               text-align: center;
-              line-height: 105px;
-              width: 100px;
-              height: 100px;
+              line-height: 10.5rem;
+              width: 10rem;
+              height: 10rem;
               border-radius: 50%;
               box-shadow: 1px 1px 0px #fff inset, 0 0 8px rgba(0, 0, 0, 0.4);
               transform: translateY(-50%);
               position: absolute;
               top: 50%;
-              left: 62px;
+              left: 6.2rem;
             }
             .timeline-year {
               color: #fff;
-              font-size: 35px;
+              font-size: 3.5rem;
               font-weight: 700;
-              line-height: 35px;
+              line-height: 3.5rem;
               transform: translateY(-50%) rotate(90deg);
               position: absolute;
               top: 50%;
-              left: -10px;
+              left: -1rem;
             }
             .title {
               color: #f59220;
-              font-size: 20px;
+              font-size: 2rem;
               font-weight: 700;
               text-transform: uppercase;
-              margin: 0 0 8px;
+              margin: 0 0 0.8rem;
             }
             .description {
               color: #777;
-              font-size: 16px;
+              font-size: 1.6rem;
               margin: 0;
             }
           }
@@ -620,18 +617,18 @@
             .main-timeline {
               .timeline {
                 text-align: center;
-                margin: 0 0 30px;
+                margin: 0 0 3rem;
                 &:nth-child(even) {
                   text-align: center;
-                  margin: 0 0 30px;
+                  margin: 0 0 3rem;
                   .timeline-content {
-                    padding: 15px 10px 175px 10px;
+                    padding: 1.5rem 1rem 17.5rem 1rem;
                     &:before {
                       width: 100%;
-                      height: 123px;
+                      height: 12.3rem;
                       border-left-width: 0;
                       border-right-width: 0;
-                      border-top-width: 30px;
+                      border-top-width: 3rem;
                       top: auto;
                       bottom: 0;
                     }
@@ -639,26 +636,26 @@
                   .timeline-year {
                     transform: translateX(-50%) translateY(0) rotate(0deg);
                     top: auto;
-                    bottom: 10px;
+                    bottom: 1rem;
                     left: 50%;
                   }
                   .timeline-icon {
                     box-shadow: -1px -1px 0px #fff inset, 0 0 8px rgba(0, 0, 0, 0.4);
                     transform: translateX(-50%) translateY(0);
                     top: auto;
-                    bottom: 62px;
+                    bottom: 6.2rem;
                     left: 50%;
                   }
                 }
               }
               .timeline-content {
-                padding: 15px 10px 175px 10px;
+                padding: 1.5rem 1rem 17.5rem 1rem;
                 &:before {
                   width: 100%;
-                  height: 123px;
+                  height: 12.3rem;
                   border-left-width: 0;
                   border-right-width: 0;
-                  border-top-width: 30px;
+                  border-top-width: 3rem;
                   top: auto;
                   bottom: 0;
                 }
@@ -666,18 +663,18 @@
               .timeline-year {
                 transform: translateX(-50%) translateY(0) rotate(0deg);
                 top: auto;
-                bottom: 10px;
+                bottom: 1rem;
                 left: 50%;
               }
               .timeline-icon {
                 box-shadow: -1px -1px 0px #fff inset, 0 0 8px rgba(0, 0, 0, 0.4);
                 transform: translateX(-50%) translateY(0);
                 top: auto;
-                bottom: 62px;
+                bottom: 6.2rem;
                 left: 50%;
               }
               .title {
-                font-size: 20px;
+                font-size: 2rem;
               }
             }
           }
@@ -833,8 +830,8 @@
       }
       > .faqBlock {
         padding: {
-          top: $oneVh * 40;
-          bottom: $oneVh * 40;
+          top: 4rem;
+          bottom: 4rem;
         }
         background: {
           // image: url("../../assets/images/documentBg.jpg");
@@ -846,19 +843,19 @@
         > .title {
           text-align: center;
           margin: {
-            bottom: $oneVh * 30;
+            bottom: 3rem;
           }
           font: {
             family: "poppinsbold";
-            size: $oneVw * 35;
+            size: 3.5rem;
           }
           color: $black;
         }
         > .content {
           > .accordion {
             padding: {
-              left: $oneVw * 100;
-              right: $oneVw * 100;
+              left: 10rem;
+              right: 10rem;
             }
             > .accordion-item {
               border: none;
@@ -872,7 +869,7 @@
                   }
                   font: {
                     family: $primary-font-regular;
-                    size: $oneVw * 18;
+                    size: 1.8rem;
                   }
                   color: $black;
                   &:focus {
@@ -885,11 +882,11 @@
                 > .accordion-body {
                   font: {
                     family: $primary-font-regular;
-                    size: $oneVw * 18;
+                    size: 1.8rem;
                   }
                   > ul {
                     padding: {
-                      left: $oneVw * 15;
+                      left: 1.5rem;
                     }
                     margin: {
                       bottom: 0;
@@ -897,11 +894,11 @@
                     > li {
                       list-style-type: disc;
                       margin: {
-                        bottom: $oneVw * 5;
+                        bottom: 0.5rem;
                       }
                       font: {
                         family: $primary-font-regular;
-                        size: $oneVw * 18;
+                        size: 1.8rem;
                       }
                       color: $black;
                     }
@@ -917,4 +914,49 @@
 }
 a.timeline-content {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .container-fluid {
+    > .row {
+      > div {
+        > .topSection {
+          min-height: 50rem;
+        }
+        > .horizantalStrips {
+          > div {
+            margin: {
+              bottom: 1.5rem;
+            }
+            > .block {
+            }
+            &:last-of-type {
+              margin: {
+                bottom: 0;
+              }
+            }
+          }
+        }
+        > .verticalStrips {
+          > div {
+            > .leftBlock {
+              > img {
+                max-height: 100%;
+              }
+            }
+          }
+        }
+        > .faqBlock {
+          > .content {
+            > .accordion {
+              padding: {
+                left: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

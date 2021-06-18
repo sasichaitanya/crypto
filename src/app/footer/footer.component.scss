@@ -15,20 +15,20 @@
     > .mainFooter {
       opacity: 0;
       padding: {
-        left: $oneVw * 100;
-        right: $oneVw * 100;
-        top: $oneVw * 100;
-        bottom: $oneVw * 100;
+        left: 10rem;
+        right: 10rem;
+        top: 10rem;
+        bottom: 10rem;
       }
       > .block {
         > h3 {
           color: $white;
           font: {
             family: $primary-font-bold;
-            size: $oneVw * 20;
+            size: 2rem;
           }
           margin: {
-            bottom: $oneVh * 15;
+            bottom: 1.5rem;
           }
         }
         > ul {
@@ -41,14 +41,14 @@
           > li {
             list-style-type: none;
             margin: {
-              bottom: $oneVh * 10;
+              bottom: 1rem;
             }
             > a {
               color: $white;
               text-decoration: none;
               font: {
                 family: $primary-font-regular;
-                size: $oneVw * 16;
+                size: 1.6rem;
               }
             }
           }
@@ -57,7 +57,7 @@
     }
     .navFooter {
       margin: {
-        bottom: $oneVw * 20;
+        bottom: 2rem;
       }
       > div {
         > .iconsBlock {
@@ -69,11 +69,11 @@
             > li {
               float: left;
               list-style-type: none;
-              margin-right: $oneVw * 30;
+              margin-right: 3rem;
               > i {
                   color: $white;
                 font: {
-                  size: $oneVw * 30;
+                  size: 3rem;
                 }
               }
             }
@@ -91,12 +91,12 @@
             float: left;
             list-style-type: none;
             margin: {
-              right: $oneVw * 15;
+              right: 1.5rem;
             }
             > a {
               font: {
                 family: $primary-font-bold;
-                size: $oneVw * 18;
+                size: 1.8rem;
               }
               text: {
                 decoration: none;
@@ -110,14 +110,14 @@
     > .secondFooter {
       border-top: 1px solid $white;
       padding: {
-        top: $oneVh * 30;
-        bottom: $oneVh * 30;
+        top: 3rem;
+        bottom: 3rem;
       }
       text-align: right;
       color: $white;
       font: {
         family: $primary-font-regular;
-        size: $oneVw * 16;
+        size: 1.6rem;
       }
     }
   }
