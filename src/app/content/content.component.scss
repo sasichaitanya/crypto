@@ -5,7 +5,7 @@
     > div {
       > .topSection {
         min-height: 85rem;
-        padding-top: 2.5rem;
+        padding-top: 0.5rem;
         background: {
           color: transparent;
           image: url("../../assets/images/topBg.png");
@@ -31,10 +31,15 @@
                 width: 100%;
                 display: block;
                 font: {
-                  family: "poppinsregular";
+                  family: "poppinsbold";
                   size: 8rem;
                 }
                 color: $purple;
+                &:last-of-type {
+                  font: {
+                    family: "poppinsregular";
+                  }
+                }
               }
             }
             > .bottomtxt {
@@ -134,45 +139,47 @@
           color: $white;
         }
         > div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          > .block {
-            width: 35rem;
-            min-height: $oneVh * 150;
-            border-radius: 0.8rem;
-            padding: 5rem 1.5rem;
-            text-align: center;
-            background: {
-              color: $white;
-            }
-            transition: all 0.5s;
-            -o-transition: all 0.5s;
-            -ms-transition: all 0.5s;
-            -moz-transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            border: 1px solid rgba(33, 40, 50, 0.125) !important;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 1.4rem 2.8rem, rgba(0, 0, 0, 0.22) 0px 1rem 1rem;
-            > span {
-              width: 100%;
-              display: block;
-              color: $black;
-              &:first-of-type {
-                font: {
-                  family: $primary-font-regular;
-                  size: 2.4rem;
+          > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > .block {
+              width: 35rem;
+              min-height: $oneVh * 150;
+              border-radius: 0.8rem;
+              padding: 5rem 1.5rem;
+              text-align: center;
+              background: {
+                color: $white;
+              }
+              transition: all 0.5s;
+              -o-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -webkit-transition: all 0.5s;
+              border: 1px solid rgba(33, 40, 50, 0.125) !important;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 1.4rem 2.8rem, rgba(0, 0, 0, 0.22) 0px 1rem 1rem;
+              > span {
+                width: 100%;
+                display: block;
+                color: $black;
+                &:first-of-type {
+                  font: {
+                    family: $primary-font-regular;
+                    size: 2.4rem;
+                  }
+                }
+                &:last-of-type {
+                  font: {
+                    family: $primary-font-regular;
+                    size: 1.8rem;
+                  }
                 }
               }
-              &:last-of-type {
-                font: {
-                  family: $primary-font-regular;
-                  size: 1.8rem;
-                }
+              &:hover {
+                box-shadow: none;
+                transform: translate(0px, -1rem);
               }
-            }
-            &:hover {
-              box-shadow: none;
-              transform: translate(0px, -1rem);
             }
           }
         }
@@ -216,7 +223,7 @@
                   family: $primary-font-regular;
                 }
                 &:first-of-type {
-                  color: $logoBgColor;
+                  color: $navtxtColor;
                   font: {
                     size: 4rem;
                   }
@@ -268,7 +275,7 @@
       }
       > .features {
         background: {
-          color: $topSectionColor;
+          color: $navtxtColor;
         }
         margin: {
           top: 4rem;
@@ -277,13 +284,10 @@
           top: 4rem;
         }
         > .title {
-          // color: $black;
-          color: #9f4c91;
+          text-align: center;
+          color: $white;
           margin: {
             bottom: 4rem;
-          }
-          margin: {
-            left: 4.5rem;
           }
           font: {
             // family: $primary-font-bold;
@@ -436,13 +440,10 @@
           bottom: 4rem;
         }
         > .title {
-          // color: $black;
+          text-align: center;
           color: #9f4c91;
           margin: {
             bottom: 4rem;
-          }
-          margin: {
-            left: 4.5rem;
           }
           font: {
             // family: $primary-font-bold;
@@ -922,17 +923,34 @@ a.timeline-content {
       > div {
         > .topSection {
           min-height: 50rem;
+          > .topContentSection {
+            > .leftBlock {
+              padding: {
+                left: 35% !important;
+              }
+              > .toptxt {
+                > span {
+                  color: $white;
+                  font: {
+                    size: 6rem;
+                  }
+                }
+              }
+            }
+          }
         }
         > .horizantalStrips {
           > div {
-            margin: {
-              bottom: 1.5rem;
-            }
-            > .block {
-            }
-            &:last-of-type {
+            > div {
               margin: {
-                bottom: 0;
+                bottom: 1.5rem;
+              }
+              > .block {
+              }
+              &:last-of-type {
+                margin: {
+                  bottom: 0;
+                }
               }
             }
           }
@@ -952,6 +970,42 @@ a.timeline-content {
               padding: {
                 left: 0;
                 right: 0;
+              }
+            }
+          }
+        }
+        > .features {
+          > .content {
+            padding: {
+              left: 1rem;
+              right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .container-fluid {
+    > .row {
+      > div {
+        > .verticalStrips {
+          > div {
+            > .leftBlock {
+              > img {
+                max-height: 100%;
+              }
+            }
+          }
+        }
+        > .faqBlock {
+          > .content {
+            > .accordion {
+              padding: {
+                left: 2rem;
+                right: 2rem;
               }
             }
           }

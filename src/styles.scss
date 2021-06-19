@@ -6,6 +6,16 @@ html {
   font: {
     size: 62.5%;
   }
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: {
+    x: hidden;
+    y: auto;
+  }
+
   body {
     width: 100%;
     float: left;
@@ -15,6 +25,24 @@ html {
     overflow: {
       x: hidden;
       y: auto;
+    }
+  }
+}
+
+.navbar-light .navbar-toggler {
+  background: {
+    color: $white;
+  }
+}
+.navbar-nav {
+  background: {
+    color: $white;
+  }
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  > li {
+    margin:  {
+      right: 0 !important;
     }
   }
 }
