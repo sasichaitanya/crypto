@@ -6,62 +6,70 @@
         <div class="row topContentSection mx-0">
           <div class="col-md-6 col-12 leftBlock">
             <div class="toptxt">
-              <span>Little Meme.</span>
-              <span>Big Dream.</span>
+              <span>Dragon</span>
+              <span>Earth</span>
             </div>
-            <div class="bottomtxt">
+            <div class="bottomtxt d-none">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
                 text of the printing and typesetting industry.</p>
             </div>
-            <div class="btnBlock" *ngIf="false">
-              <button class="btn">Buy Kishu </button>
-              <button class="btn">Buy Kishu </button>
+            <div class="btnBlock">
+              <button class="btn">Buy on Pancakeswap </button>
             </div>
-            <div class="iconsBlock">
+            <div class="btnBlock">
+              <button class="btn">Join Telegram </button>
+            </div>
+            <div class="iconsBlock d-none">
               <ul>
-                <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-                <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+                <!-- <li><i class="fa fa-telegram" aria-hidden="true"></i></li> -->
                 <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
                 <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-12 rightBlock">
-            <div class="imageSection">
+            <div class="imageSection" *ngIf="false">
               <img src="../../assets/images/v1.gif" alt="Dog Image" />
             </div>
           </div>
         </div>
       </div>
-      <div class="row horizantalStrips mx-0" *ngIf="false">
-        <div class="col-md-3 col-12">
-          <div class="block">
-            <span>Token Holders</span>
-            <span>Over 25,140</span>
+      <div class="row verticalStrips mx-0" *ngIf="true">
+        <div class="col-xl-6 col-md-12">
+          <div class="leftBlock">
+            <img src="../../assets/images/dragonRead.png" />
           </div>
         </div>
-        <div class="col-md-3 col-12">
-          <div class="block">
-            <span>Token Holders</span>
-            <span>Over 25,140</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-12">
-          <div class="block">
-            <span>Token Holders</span>
-            <span>Over 25,140</span>
-          </div>
-        </div>
-        <div class="col-md-3 col-12">
-          <div class="block">
-            <span>Token Holders</span>
-            <span>Over 25,140</span>
+        <div class="col-xl-6 col-md-12">
+          <div class="rightBlock">
+            <div class="block">
+              <span>Auto Yield Redistribution</span>
+              <span>You only need to hold on the token to earn more.On each trasaction 6 % is redistributed to all the
+                holders</span>
+            </div>
+            <div class="block">
+              <span>Community Powered</span>
+              <span>The community will be the main driving force of the growth of this token.</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row verticalStrips mx-0">
+      <div class="row verticalStrips blockTwo mx-0" *ngIf="false">
+        <div class="col-md-6">
+          <div class="leftBlock">
+            <img src="../../assets/images/dragonRead.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="rightBlock">
+            <h2>Community Powered</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row verticalStrips blockTwo mx-0" *ngIf="false">
         <div class="col-md-6">
           <div class="leftBlock">
             <img src="../../assets/images/eyeglasses-kishu-p-800.png" />
@@ -69,84 +77,106 @@
         </div>
         <div class="col-md-6">
           <div class="rightBlock">
-            <div class="block">
-              <span>Token Holders</span>
-              <span>Over 25,140</span>
-            </div>
-            <div class="block">
-              <span>Token Holders</span>
-              <span>Over 25,140</span>
-            </div>
-            <div class="block">
-              <span>Token Holders</span>
-              <span>Over 25,140</span>
-            </div>
+            <h2>Community Powered Two</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </div>
       <div class="row features mx-0">
         <div class="col-md-12 title">Features</div>
-        <div class="row content">
-          <div class="col-md-4">
+        <div class="row content mx-0">
+          <div class="col-xl-4 col-md-6 col-12">
             <div class="block">
               <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
+                <div class="imgBlock">
+                  <img src="../../assets/images/features1.png" class="" alt="Blogging">
+                </div>
                 <div class="card-body">
+                  <div class="card-title">
+                    <span>Redistribution</span>
+                  </div>
+                  <p class="card-text">Dragon punishes the short term traders with gigantic 6% transaction fees and
+                    redistribute back to all holders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="block">
+              <div class="card">
+                <div class="imgBlock">
+                  <img src="../../assets/images/build--product.png" class="" alt="build a Product">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <span>Marketing</span>
+                  </div>
+                  <p class="card-text">From the initial launch there will be special focus on marketing at every stage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="block">
+              <div class="card">
+                <div class="imgBlock">
+                  <img src="../../assets/images/giveaway.png" class="" alt="Give Away">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <span>Unique Rewards</span>
+                  </div>
+                  <p class="card-text">The rewards for the community will be exciting and aimed at making the token more
+                    popular.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="block">
+              <div class="card">
+                <div class="imgBlock">
+                  <img src="../../assets/images/growth-2.png" class="" alt="Growth">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <span>Targeted Focus</span>
+                  </div>
+                  <p class="card-text">We target different aims at different phases .Our primary aim is to bring in more
+                    holders and in next phase we incease usability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="block">
+              <div class="card">
+                <div class="imgBlock">
+                  <img src="../../assets/images/security1.png" class="" alt="Security">
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <span>Marketing</span>
+                  </div>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-xl-4 col-md-6 col-12">
             <div class="block">
               <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <div class="imgBlock">
+                  <img src="../../assets/images/security.png" class="" alt="Anima Security">
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block">
-              <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block">
-              <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block">
-              <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block">
-              <div class="card">
-                <img src="../../assets/images/DogImage.jpg" class="" alt="...">
-                <div class="card-body">
+                  <div class="card-title">
+                    <span>Marketing</span>
+                  </div>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
                 </div>
@@ -243,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="row roadMap">
+      <div class="row roadMap mx-0">
         <div class="col-md-12 title">Road Map</div>
         <div class="col-md-12 mapContent">
           <div class="container">
@@ -254,46 +284,204 @@
                     <a href="#" class="timeline-content">
                       <div class="timeline-icon"><i class="fa fa-globe"></i></div>
                       <div class="timeline-year">2021</div>
-                      <h3 class="title">Web Designing</h3>
-                      <p class="description">
+                      <h3 class="title">Phase 1</h3>
+                      <!-- <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
                         condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                      </p>
+                      </p> -->
+                      <ul>
+                        <li>Pre Sale</li>
+                        <li>Website Launch</li>
+                        <li>10k holders</li>
+                        <li>Audit</li>
+                      </ul>
                     </a>
                   </div>
                   <div class="timeline">
                     <a href="#" class="timeline-content">
                       <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                       <div class="timeline-year">2020</div>
-                      <h3 class="title">Web Development</h3>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                        condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                      </p>
+                      <h3 class="title">Phase 2</h3>
+                      <ul>
+                        <li>AirDrop1</li>
+                        <li>Coingecko/coinmarketcap listing</li>
+                        <li>Goblet Of Fire</li>
+                        <li>Meme Marathon</li>
+                        <li>Website 2.0 launch</li>
+                      </ul>
                     </a>
                   </div>
                   <div class="timeline">
                     <a href="#" class="timeline-content">
                       <div class="timeline-icon"><i class="fa fa-globe"></i></div>
                       <div class="timeline-year">2021</div>
-                      <h3 class="title">Web Designing</h3>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                        condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                      </p>
+                      <h3 class="title">Phase 3</h3>
+                      <ul>
+                        <li>1 lakh holders</li>
+                        <li>Listing in 3 central exchanges</li>
+                        <li>Complete 3 Air Drops</li>
+                        <li>Meme Marathon2</li>
+                        <li>Website 3.0 launch</li>
+                      </ul>
                     </a>
                   </div>
                   <div class="timeline">
                     <a href="#" class="timeline-content">
                       <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                       <div class="timeline-year">2020</div>
-                      <h3 class="title">Web Development</h3>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                        condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                      </p>
+                      <h3 class="title">Phase 4</h3>
+                      <ul>
+                        <li>Reaching 1 million holders</li>
+                        <li>Major cex listings</li>
+                        <li>Dragon swap</li>
+                        <li>Comics sale and competions launch</li>
+                        <li>Dragon mobile gaming version1 launch</li>
+                      </ul>
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row documentsBlock mx-0" *ngIf="false">
+        <div class="col-md-12 title">Documents</div>
+        <div class="col-md-12 content">
+          <div class="row blocks">
+            <div class="col-md-6 col-12">
+              <div class="block">
+                <div class="imgBlock">
+                  <img src="../../assets/images/documentThumb.jpg" alt="thumb" />
+                </div>
+                <span>Lite Paper</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="block">
+                <div class="imgBlock">
+                  <img src="../../assets/images/documentThumb.jpg" alt="thumb" />
+                </div>
+                <span>Audit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row howToBuy mx-0" *ngIf="false">
+        <div class="col-md-12 title">How To Buy</div>
+        <div class="col-md-12 content">
+          <div class="block">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tab 1</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tab 2</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tab 3</button>
+                <button class="nav-link" id="nav-contact-tab4" data-bs-toggle="tab" data-bs-target="#nav-contacttab4"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tab 4</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                Tab One Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                Tab Two Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                Tab Three Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </div>
+              <div class="tab-pane fade" id="nav-contacttab4" role="tabpanel" aria-labelledby="nav-contact-tab4">
+                Tab Four Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row horizantalStrips mx-0" *ngIf="true">
+        <div class="col-md-12 title">Tokenomics</div>
+        <div class="row mx-0">
+          <div class="col-md-4 col-12">
+            <div class="block">
+              <span>Token Name</span>
+              <span>Dragon Earth</span>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="block">
+              <span>Token Symbol</span>
+              <span>$Dragon</span>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="block">
+              <span>Total Supply</span>
+              <span>20 trillion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row faqBlock mx-0">
+        <div class="col-md-12 title">FAQ'S</div>
+        <div class="col-md-12 content">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  What is the long term goal
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  To Become the most popular token on Earth and reach every crypto wallet by bringing different
+                  usabilities to the token.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Why a pre sale?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  To Provide the initial liquidity and to get some thrust to our initial marketing
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What are the tokenomics
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Pre sale - 30%</li>
+                    <li>PancakeSwap listing - 30%</li>
+                    <li>Airdrop/rewards - 30%</li>
+                    <li>Marketing wallet - 5%</li>
+                    <li>Dev Wallet - 5%</li>
+                  </ul>
                 </div>
               </div>
             </div>
