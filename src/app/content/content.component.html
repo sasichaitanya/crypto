@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" (scroll)="myScroll()">
   <div class="row">
     <div class="col-md-12 px-0">
       <div class="topSection">
@@ -14,10 +14,10 @@
                 text of the printing and typesetting industry.</p>
             </div>
             <div class="btnBlock">
-              <button class="btn">Buy on Pancakeswap </button>
+              <button class="btn" disabled>Buy on Pancakeswap </button>
             </div>
             <div class="btnBlock">
-              <button class="btn">Join Telegram </button>
+              <button class="btn" target="_blank" onclick="window.open('https://t.me/joinchat/7CrqU6DDHxVhMDJl', '_blank'); return false;">Join Telegram </button>
             </div>
             <div class="iconsBlock d-none">
               <ul>
@@ -107,7 +107,7 @@
             <div class="block">
               <div class="card">
                 <div class="imgBlock">
-                  <img src="../../assets/images/build--product.png" class="" alt="build a Product">
+                  <img src="../../assets/images/Marketing.png" class="" alt="Marketing">
                 </div>
                 <div class="card-body">
                   <div class="card-title">
@@ -123,7 +123,7 @@
             <div class="block">
               <div class="card">
                 <div class="imgBlock">
-                  <img src="../../assets/images/giveaway.png" class="" alt="Give Away">
+                  <img src="../../assets/images/UniqueRewards.png" class="" alt="Unique Rewards">
                 </div>
                 <div class="card-body">
                   <div class="card-title">
@@ -139,14 +139,13 @@
             <div class="block">
               <div class="card">
                 <div class="imgBlock">
-                  <img src="../../assets/images/growth-2.png" class="" alt="Growth">
+                  <img src="../../assets/images/Targetedfocus.png" class="" alt="Targeted Focus">
                 </div>
                 <div class="card-body">
                   <div class="card-title">
                     <span>Targeted Focus</span>
                   </div>
-                  <p class="card-text">We target different aims at different phases .Our primary aim is to bring in more
-                    holders and in next phase we incease usability.</p>
+                  <p class="card-text">Our targeted Focus varies depending on the phase we are in</p>
                 </div>
               </div>
             </div>
@@ -155,14 +154,13 @@
             <div class="block">
               <div class="card">
                 <div class="imgBlock">
-                  <img src="../../assets/images/security1.png" class="" alt="Security">
+                  <img src="../../assets/images/Lowgasfees.png" class="" alt="Low gas fees">
                 </div>
                 <div class="card-body">
                   <div class="card-title">
-                    <span>Marketing</span>
+                    <span>Low Gas Fees</span>
                   </div>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">It is a bsc coin and has very low gas fees</p>
                 </div>
               </div>
             </div>
@@ -171,14 +169,13 @@
             <div class="block">
               <div class="card">
                 <div class="imgBlock">
-                  <img src="../../assets/images/security.png" class="" alt="Anima Security">
+                  <img src="../../assets/images/Utility.png" class="" alt="Utility">
                 </div>
                 <div class="card-body">
                   <div class="card-title">
-                    <span>Marketing</span>
+                    <span>Utility</span>
                   </div>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">We build a Esports and comic launch platforms in future</p>
                 </div>
               </div>
             </div>
@@ -273,7 +270,7 @@
           </div>
         </div>
       </div>
-      <div class="row roadMap mx-0">
+      <div class="row roadMap mx-0" id="roadmap">
         <div class="col-md-12 title">Road Map</div>
         <div class="col-md-12 mapContent">
           <div class="container">
@@ -409,7 +406,7 @@
           </div>
         </div>
       </div>
-      <div class="row horizantalStrips mx-0" *ngIf="true">
+      <div class="row horizantalStrips mx-0" id="tokenomics" *ngIf="true">
         <div class="col-md-12 title">Tokenomics</div>
         <div class="row mx-0">
           <div class="col-md-4 col-12">
@@ -438,8 +435,8 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="false" aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   What is the long term goal
                 </button>
               </h2>

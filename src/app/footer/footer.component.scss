@@ -70,10 +70,12 @@
               float: left;
               list-style-type: none;
               margin-right: 3rem;
-              > i {
-                color: $white;
-                font: {
-                  size: 3rem;
+              > a {
+                > i {
+                  color: $white;
+                  font: {
+                    size: 3rem;
+                  }
                 }
               }
             }

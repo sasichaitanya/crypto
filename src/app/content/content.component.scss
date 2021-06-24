@@ -115,6 +115,15 @@
             }
           }
         }
+        ~ {
+          div {
+            &.row {
+              margin: {
+                bottom: 5rem;
+              }
+            }
+          }
+        }
       }
       > .horizantalStrips {
         display: flex;
@@ -188,6 +197,9 @@
         padding: {
           top: 8rem;
           bottom: 8rem;
+        }
+        margin: {
+          top: 4rem;
         }
         > div {
           display: flex;
