@@ -11,5 +11,15 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
   }
+  myScroll(){
+    if( (document.body.scrollTop > 100) || (document.documentElement.scrollTop > 100) ) {
+      console.log("scrolled more than 100");
+    }
+  }
+
+  scrollTop() {
+    console.log("scroll top");
+    document.getElementById("#myDiv").scrollTop = 0;
+  }
 
 }

@@ -46,3 +46,37 @@ html {
     }
   }
 }
+
+#scrollTop {
+  display: none;
+}
+.scrollTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  background: {
+    color: $purple;
+  }
+  border: {
+    radius: 2rem;
+  }
+  box-shadow: 1px 1px 5px 3px rgba(255, 255, 255, 0.6);
+  transition: ease-in-out 0.5s;
+  > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font:  {
+      size: 2rem;
+    }
+  }
+  &:hover {
+    transform: scale(1.5);
+    box-shadow: none;
+  }
+}

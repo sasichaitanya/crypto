@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Crypto</title>
@@ -9,7 +10,29 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+<body id="myDiv" onscroll="myFun()">
   <app-root></app-root>
+  <div class="scrollTop" id="scrollTop" onclick="scrollUp()">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+  </div>
 </body>
+<script>
+
+  function myFun() {
+    var scrollArrow = document.getElementById("scrollTop");
+    if ((document.body.scrollTop > 300) || (document.documentElement.scrollTop > 300)) {
+      scrollArrow.style.display = "block";
+    } else {
+      scrollArrow.style.display = "none";
+    }
+  }
+
+  function scrollUp() {
+    console.log("scroll top");
+    document.body.scrollTop = 0;
+    document.getElementById("myDiv").scrollTop = 0;
+  }
+</script>
+
 </html>
