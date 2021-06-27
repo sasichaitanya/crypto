@@ -139,6 +139,32 @@
         margin: {
           top: 2rem;
         }
+        > div {
+          > ul {
+            > li {
+              width: 100%;
+              text-align: center;
+              margin: {
+                bottom: 2rem;
+              }
+            }
+            margin: {
+              bottom: 2rem;
+            }
+          }
+          > .iconsBlock {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > ul {
+              width: auto;
+              > li:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
       }
       .secondFooter {
         text-align: center;
