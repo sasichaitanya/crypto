@@ -1,11 +1,19 @@
 @import "../../assets/scss/variables.scss";
 
 .footerBlock {
+  position: relative;
   background: {
     image: url("../../assets/images/footerBg.jpg");
     repeat: no-repeat;
     position: center;
     size: cover;
+  }
+  svg{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    color: #864a9f;
   }
   .solidBgcolor {
     background: {
@@ -112,8 +120,8 @@
     > .secondFooter {
       border-top: 1px solid $white;
       padding: {
-        top: 3rem;
-        bottom: 3rem;
+        top: 1rem;
+        bottom: 1rem;
       }
       text-align: right;
       color: $white;
@@ -172,3 +180,14 @@
     }
   }
 }
+
+
+
+// FAQ change
+// Container change
+// unnecessary images
+// footer wave 
+// copyright
+// expand and collapse
+
+// Kishu
